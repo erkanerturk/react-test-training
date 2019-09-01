@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Congrats = ({ success, ...otherProps }) => {
   return (
@@ -12,6 +13,10 @@ const Congrats = ({ success, ...otherProps }) => {
       )}
     </React.Fragment>
   );
+};
+
+Congrats.propTypes = {
+  success: PropTypes.bool.isRequired,
 };
 
 export default Congrats;
